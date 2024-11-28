@@ -6,18 +6,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ContactResponse {
+@Builder
+public class PagingResponse {
 
-    private String id;
+    private Integer currentPage;
 
-    private String firstName;
+    private  Integer totalPage;
 
-    private String lastName;
-
-    private String email;
-
-    private String phone;
+    private Integer size;
 }

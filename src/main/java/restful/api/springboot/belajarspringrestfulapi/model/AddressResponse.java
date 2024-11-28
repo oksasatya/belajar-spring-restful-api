@@ -7,17 +7,19 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class ContactResponse {
+@AllArgsConstructor
+public class AddressResponse {
 
     private String id;
 
-    private String firstName;
+    private String street;
 
-    private String lastName;
+    private String city;
 
-    private String email;
+    private String province;
 
-    private String phone;
+    private String country;
+
+    private String postalCode;
 }

@@ -1,23 +1,27 @@
 package restful.api.springboot.belajarspringrestfulapi.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ContactResponse {
+@Builder
+public class SearchContactRequest {
 
-    private String id;
-
-    private String firstName;
-
-    private String lastName;
+    private String name;
 
     private String email;
 
     private String phone;
+
+    @NotNull
+    private int page;
+
+    @NotNull
+    private int size;
 }
